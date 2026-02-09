@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #faf9f7;
+  --color-bg: #eee9e3;
   --color-text-muted: #525252;
   --color-surface: #ffffff;
   --color-accent: #c45c26;
@@ -99,7 +99,7 @@ main > p {
   font-size: 1.1rem;
   color: var(--color-text-muted);
   margin-bottom: 2rem;
-  max-width: 640px;
+  max-width: 1000px;
 }
 
 main hr {
@@ -233,6 +233,11 @@ footer p {
   margin: 0;
 }
 
+.footer-logos {
+  display: flex;
+  gap: 1.5rem;
+}
+
 footer img {
   height: 70px;
   width: auto;
@@ -277,5 +282,9 @@ footer img {
 
   section {
     padding: 1.5rem;
+  }
+
+  details img{
+    width: 85%;
   }
 }
