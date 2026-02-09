@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Tema3.2.Laboratorio</title>
   </head>
-  <body>
+  <body class="home-page">
     <header>
       <div>
         <a href="index.html">
@@ -22,22 +22,52 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Laboratorio del tema 3.2</h1>
-      <p>
-        Hola mundo, en este sitio web se mostrarán los contenidos de las tres
-        primeras unidades del Programa Células Plenum
-      </p>
-      <hr />
-      <section>
-        <h2>Unidades del curso</h2>
-        <a href="units/unidad1.html"
-          >Unidad 1. Inducción al Programa Células Plenum</a
-        >
-        <a href="units/unidad2.html">Unidad 2. Fundamentos de Programación</a>
-        <a href="units/unidad3.html"
-          >Unidad 3. Fundamentos de Programación Web</a
-        >
+    <main class="home-main">
+      <section class="home-hero">
+        <div class="home-hero-text">
+          <p class="home-tagline">Programa Células Plenum · Tema 3.2</p>
+          <h1>Laboratorio del tema 3.2</h1>
+          <p>
+            Bienvenido al laboratorio donde revisaremos los contenidos esenciales
+            de las tres primeras unidades del Programa Células Plenum.
+          </p>
+          <p class="home-subtext">
+            Explora cada unidad para acceder a videos, documentos y recursos
+            prácticos pensados para reforzar tus conocimientos.
+          </p>
+        </div>
+      </section>
+
+      <section class="home-units">
+        <h2>Explora las unidades del curso</h2>
+        <div class="home-units-grid">
+          <a href="units/unidad1.html" class="unit-card">
+            <span class="unit-label">Unidad 1</span>
+            <h3>Inducción al Programa Células Plenum</h3>
+            <p>
+              Conceptos básicos de ingeniería de software, arquitectura de
+              software y patrones de diseño.
+            </p>
+          </a>
+
+          <a href="units/unidad2.html" class="unit-card">
+            <span class="unit-label">Unidad 2</span>
+            <h3>Fundamentos de Programación</h3>
+            <p>
+              Bases de datos, normalización, SQL, POO y desarrollo orientado a
+              servicios.
+            </p>
+          </a>
+
+          <a href="units/unidad3.html" class="unit-card">
+            <span class="unit-label">Unidad 3</span>
+            <h3>Fundamentos de Programación Web</h3>
+            <p>
+              HTTP, HTML, CSS, Bootstrap y JavaScript para la creación de sitios
+              web.
+            </p>
+          </a>
+        </div>
       </section>
     </main>
     <footer>
