@@ -5,25 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/plenumlogo.png" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Tema3.2.Laboratorio</title>
   </head>
-  <body class="home-page">
-    <header>
-      <div>
-        <a href="index.html">
+  <body class="home-page d-flex flex-column min-vh-100">
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
           <img src="img/plenum.png" alt="plenum" />
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-3 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="units/unidad1.html">Unidad 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="units/unidad2.html">Unidad 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="units/unidad3.html">Unidad 3</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="units/unidad1.html">UNIDAD 1</a></li>
-          <li><a href="units/unidad2.html">UNIDAD 2</a></li>
-          <li><a href="units/unidad3.html">UNIDAD 3</a></li>
-        </ul>
-      </nav>
     </header>
-    <main class="home-main">
-      <section class="home-hero">
+    <main class="home-main container py-5">
+      <section class="home-hero p-4 p-lg-5 mb-5">
         <div class="home-hero-text">
           <p class="home-tagline">Programa Células Plenum · Tema 3.2</p>
           <h1>Laboratorio del tema 3.2</h1>
@@ -39,43 +57,52 @@
       </section>
 
       <section class="home-units">
-        <h2>Explora las unidades del curso</h2>
-        <div class="home-units-grid">
-          <a href="units/unidad1.html" class="unit-card">
-            <span class="unit-label">Unidad 1</span>
-            <h3>Inducción al Programa Células Plenum</h3>
-            <p>
-              Conceptos básicos de ingeniería de software, arquitectura de
-              software y patrones de diseño.
-            </p>
-          </a>
+        <h2 class="text-center text-md-start">Explora las unidades del curso</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <a href="units/unidad1.html" class="unit-card h-100">
+              <span class="unit-label">Unidad 1</span>
+              <h3>Inducción al Programa Células Plenum</h3>
+              <p>
+                Conceptos básicos de ingeniería de software, arquitectura de
+                software y patrones de diseño.
+              </p>
+            </a>
+          </div>
 
-          <a href="units/unidad2.html" class="unit-card">
-            <span class="unit-label">Unidad 2</span>
-            <h3>Fundamentos de Programación</h3>
-            <p>
-              Bases de datos, normalización, SQL, POO y desarrollo orientado a
-              servicios.
-            </p>
-          </a>
+          <div class="col">
+            <a href="units/unidad2.html" class="unit-card h-100">
+              <span class="unit-label">Unidad 2</span>
+              <h3>Fundamentos de Programación</h3>
+              <p>
+                Bases de datos, normalización, SQL, POO y desarrollo orientado a
+                servicios.
+              </p>
+            </a>
+          </div>
 
-          <a href="units/unidad3.html" class="unit-card">
-            <span class="unit-label">Unidad 3</span>
-            <h3>Fundamentos de Programación Web</h3>
-            <p>
-              HTTP, HTML, CSS, Bootstrap y JavaScript para la creación de sitios
-              web.
-            </p>
-          </a>
+          <div class="col">
+            <a href="units/unidad3.html" class="unit-card h-100">
+              <span class="unit-label">Unidad 3</span>
+              <h3>Fundamentos de Programación Web</h3>
+              <p>
+                HTTP, HTML, CSS, Bootstrap y JavaScript para la creación de sitios
+                web.
+              </p>
+            </a>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p>Eduardo Felipe Poot Chairez - 2026</p>
-      <div class="footer-logos">
-        <img src="img/itm.png" alt="tec" />
-        <img src="img/PLENUMSOFT LOGO BLANCO 1.png" alt="plenum" />
+    <footer class="bg-black text-white py-4 mt-auto">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 fw-bold text-center text-md-start">Eduardo Felipe Poot Chairez - 2026</p>
+        <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+          <img src="img/itm.png" alt="tec" />
+          <img src="img/PLENUMSOFT LOGO BLANCO 1.png" alt="plenum" />
+        </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
